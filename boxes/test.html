@@ -1,0 +1,72 @@
+<!-- JenniferDewalt -->
+<!-- create a box/style box class --> 
+<!-- click-> hover to appear -->
+<!-- randomize color -->
+<!-- hover randomize and light up -->
+<!-- create a grid of boxes -->
+<!-- empty first -->
+<!-- when mouse hovers over box it turns to a random color -->
+<!-- also highlights current box -->
+
+<!-- todo -->
+<!-- create a loop to make boxes -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechniBox</title>
+        <style>         
+            body 
+            {
+            height: 100%;
+            background-color: #101010;
+            }
+            .main
+            {
+            height: 150em;
+            width: 150em;
+            background-color: thistle;
+            }
+
+            .box
+            {
+                height: 10em;
+                width: 10em;
+                float: left;
+            }
+            .box:hover
+            {
+            box-shadow: 0px 0px 7px white;
+            z-index: 1;
+            position: relative;
+            }
+            
+        </style>
+        <script>
+        function getRandomColor(event) 
+
+            {
+            var randomColor = Math.floor(Math.random()*16777215).toString(16);
+            event.target.style.backgroundColor = "#" + randomColor;
+
+            }
+
+        function addBoxes()
+        {
+            for(i=0;i<16;i++)
+            {
+                var boxes = `<div class = "box" onmouseover = "getRandomColor(event)"></div>`
+                document.getElementById("Body").innerHTML += boxes;
+            }
+        }  
+
+
+        //event object - an object the browser makes with details about the event that JUST happened
+        //target - a property of that^ object thats created that points to the thing the event happened to(aka the box in this place) 
+        </script>
+</head>
+<body id="Body" onload="addBoxes()">
+</body>
+</html>
