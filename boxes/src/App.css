@@ -1,13 +1,32 @@
-.App {
-  text-align: center;
+body
+  {
+      margin: auto;
+      background-color: dimgrey;
+      height: 90em;
+      width: 90em;
+      border-style: solid;
+      border-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box
+{
+  float: left;
+  height: 10em;
+  width: 10em; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.box:hover
+{
+  box-shadow: 0px 0px 7px white;
+  z-index: 1;
+  position: relative;
+}
+
+
+
+
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
@@ -35,4 +54,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
