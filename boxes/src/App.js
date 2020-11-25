@@ -10,15 +10,25 @@ class App extends React.Component {
       value: null
     };
   }
+
+  // addBoxes() {
+  //   for(i=0;i<16;i++)
+  //   {
+
+  // }  
+
+  
+
   renderBox(i) {
-    return <Box value="something in a string" />;
+    return <Box />;
   }
+
   render() {
     return (
-      <div>
-        <div className="Body"></div>
-        {this.renderBox()}
-      </div>)
+        <div className="body">
+          {this.renderBox()}
+        </div>
+    )
   }
 }
 
@@ -26,7 +36,7 @@ class Box extends React.Component {
 
   render() {
     return (
-      <div className="Box">
+      <div className="box">
         {this.props.value}
       </div>
 
@@ -37,7 +47,10 @@ class Box extends React.Component {
 export default App;
 
 
-
+// ReactDOM.render(
+//   <App />,
+//   document.getElementById('root')
+// );
 
 
 

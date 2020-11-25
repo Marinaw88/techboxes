@@ -13,6 +13,9 @@ body
   float: left;
   height: 10em;
   width: 10em; 
+  border-style: solid;
+  background-color: blue;
+  border-color: black;
 }
 
 .box:hover
