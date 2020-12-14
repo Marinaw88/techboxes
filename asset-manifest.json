@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/techboxes/static/css/main.f8809883.chunk.css",
+    "main.js": "/techboxes/static/js/main.b6ff665b.chunk.js",
+    "main.js.map": "/techboxes/static/js/main.b6ff665b.chunk.js.map",
+    "runtime-main.js": "/techboxes/static/js/runtime-main.ef0888b0.js",
+    "runtime-main.js.map": "/techboxes/static/js/runtime-main.ef0888b0.js.map",
+    "static/js/2.67072d7c.chunk.js": "/techboxes/static/js/2.67072d7c.chunk.js",
+    "static/js/2.67072d7c.chunk.js.map": "/techboxes/static/js/2.67072d7c.chunk.js.map",
+    "static/js/3.763db48f.chunk.js": "/techboxes/static/js/3.763db48f.chunk.js",
+    "static/js/3.763db48f.chunk.js.map": "/techboxes/static/js/3.763db48f.chunk.js.map",
+    "index.html": "/techboxes/index.html",
+    "static/css/main.f8809883.chunk.css.map": "/techboxes/static/css/main.f8809883.chunk.css.map",
+    "static/js/2.67072d7c.chunk.js.LICENSE.txt": "/techboxes/static/js/2.67072d7c.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/techboxes/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef0888b0.js",
+    "static/js/2.67072d7c.chunk.js",
+    "static/css/main.f8809883.chunk.css",
+    "static/js/main.b6ff665b.chunk.js"
+  ]
+}
