@@ -1,77 +1,80 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
+import logo from './logo.svg';
 
-class App extends React.Component {
+class Box extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      value: null
-    };
+    this.changeColor = this.changeColor.bind(this);
+
+    //Initialize color
+    this.state={ 
+      color: "",
+      boxClass: "grayBox"
+    }
   }
 
-  // addBoxes() {
-  //   for(i=0;i<16;i++)
-  //   {
+  changeColor() {
+    let newColor = '#'+ Math.floor(Math.random()*16777215).toString(16); 
+    this.setState({color: newColor, boxClass: "grayBox"
+    }); // console.log("); 
+   }
 
-  // }  
 
-  
-
-  renderBox(i) {
-    return <Box />;
-  }
-
-  render() {
+   render(){
     return (
-        <div className="body">
-          {this.renderBox()}
-        </div>
-    )
+      <div
+        onMouseOver={this.changeColor} 
+
+        className={this.state.boxClass} 
+        style={{backgroundColor: this.state.color}} // Changes the background to the current state of color
+      ></div> 
+      )
+    }
   }
-}
 
-class Box extends React.Component {
+class App extends React.Component {
+  render(){
+    let addBoxes = [];
+      for(let i = 0; i < 100; i++){
+      addBoxes.push(<Box/>) 
+    }
 
-  render() {
     return (
-      <div className="box">
-        {this.props.value}
-      </div>
-
+      <div className="container">{addBoxes}</div>
     );
   }
 }
-
 export default App;
 
+//   renderBox(i) {
+//     return <Box />;
+//   }
 
-// ReactDOM.render(
-//   <App />,
-//   document.getElementById('root')
-// );
+//   render() {
+//     return (
+//         <div className="body">
+//           {this.renderBox()}
+//         </div>
+//     )
+//   }
+// }
+
+// class Box extends React.Component {
+
+//   render() {
+//     return (
+//       <div className="box">
+//         {this.props.value}
+//       </div>
+
+//     );
+//   }
+// }
+
+// export default App;
 
 
 
-
-
-
-    // return (
-  //   <div className="App">
-  //     <header className="App-header">
-  //       <img src={logo} className="App-logo" alt="logo" />
-  //       <p>
-  //         Edit <code>src/App.js</code> and save to reload.
-  //       </p>
-  //       <a
-  //         className="App-link"
-  //         href="https://reactjs.org"
-  //         target="_blank"
-  //         rel="noopener noreferrer"
-  //       >
-  //         Learn React
-  //       </a>
-  //     </header>
-  //   </div>
-  // );
