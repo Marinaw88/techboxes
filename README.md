@@ -2,7 +2,7 @@ Live link:
 
 -----------------React--------------------
 
-Getting color crazy with React events: Make random colored boxes appear and illuminate with your mouse
+Getting color crazy with React events: Move the mouse around to make colored boxes appear, change color randomly and illuminate
 
 Goals:
 1. Learn how to work with events, components, props, states in React <done>
@@ -12,5 +12,6 @@ Goals:
 
 1. Problem: Getting stuck at the beginning
 
-Solution: Stepped back, wrote out plan in english, tested one thing at a time
+Solution: Stepped back, wrote out plan in english, renamed classes and functions. Tested one thing at a time. Realized how simple it could be.
+
 
